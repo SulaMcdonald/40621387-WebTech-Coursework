@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="dragAndDrop.css">
+</head>
+<body>
+    <script src="dragAndDrop.js"></script>
+
+    <div class="instructions">
+        <h2><u>Clean the Red Wine</u></h2>
+        <p>Pick and drag the correct items to see if they will remove the stain</p>
+    </div>
+
+    <div class="buttons">
+        <button type="button" onclick="reloadPage()">Reset Cleaning Appliances</button>
+    </div>
+
+    <div class="gameBorder">
+
+        <div class="dragBorder">
+            <img id="rubberDuck" src="Images/rubberDuck.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, rubberDuck);">
+            <img id="washingUpLiquid"  src="Images/washingUpLiquid.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, washingUpLiquid);">
+            <img id="moreWine"  src="Images/wineBottle.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, moreWine);">
+            <img id="warmWater"  src="Images/warm water.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, warmWater);">
+        </div>
+        
+        
+        <img src="Images/wineSpillage.png" id="imgwineBottleSpillage" ondragover="onDragOver(event);" ondrop="onDrop(event);" draggable="false">
+        
+        <div class="dragBorder">
+            <img id="coffee"  src="Images/coffee.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, coffee);">
+            <img id="sponge"  src="Images/sponge.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, sponge);">
+            <img id="sock"  src="Images/sock.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, sock);">
+            <img id="whiteVinegar"  src="Images/vinegar.png" class="dragItems" draggable="true" ondragstart="onDragStart(event, whiteVinegar);">
+        </div>
+    </div>
+</body>
+</html>
