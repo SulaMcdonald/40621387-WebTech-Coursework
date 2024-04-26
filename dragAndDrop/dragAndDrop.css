@@ -65,6 +65,12 @@ button{
     margin-bottom: 10px;
 }
 
+#homeButton{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+}
+
 button:hover{
     background-color: lightgray;
 }
